@@ -1,0 +1,7 @@
+By finding the best fit value of all points, you can easily map your inputs and outputs.
+
+For example, if you are looking for the price of a car based on how many miles it has, we can create a relationship x as the number of
+miles in the odometer and y as the price. With a bunch of these values, we can plot them into an x,y plane and by getting the best fit
+value, you can find the likelyhood of what the price of your car will be given the number of miles.
+
+There are many ways to get the best fit line, but in this assignment, we used the gradient descent method.

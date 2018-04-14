@@ -48,6 +48,7 @@ def run():
 	# hyperparameters
 	learning_rate = 0.0001
 
+
 	# y = mx+b
 	initial_b = 0
 	initial_m = 0
@@ -55,8 +56,8 @@ def run():
 	[b, m] = gradient_descent_runner(points, initial_b, initial_m, learning_rate, num_iterations)
 
 
-	print("After 1000 iterations b = " + str(b) + ", m = " + str(m) + ", error = " + str(compute_error_for_given_points(b, m, points)))
-	print("Optimal best fit value: y = (" + str(m) +")x + " + str(b))
+	# print("After 1000 iterations b = " + str(b) + ", m = " + str(m) + ", error = " + str(compute_error_for_given_points(b, m, points)))
+	# print("Optimal best fit value: y = (" + str(m) +")x + " + str(b))
 
 
 if __name__ == '__main__':

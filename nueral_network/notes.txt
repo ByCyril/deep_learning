@@ -1,0 +1,14 @@
+In this assignment, we are creating a simple neural network that mimicks how to the brain works.
+
+To create a nueral network, we must first start with inputs and outputs. Let A be our inputs while b be our outputs.
+
+A = [[0, 0, 1], 
+	 [1, 0, 1], 
+	 [1, 0, 0]]
+
+b = [[0],
+	 [0], 
+	 [1]]
+
+What we do next, is we try to solve for the system by first creating random weights from -1 to 1. Then we update the weights until we get a minimum error. Since we iterate through the equations 10,000 times, we are likely to get a very small error and we can output our results.
+

@@ -37,16 +37,13 @@ if __name__ == '__main__':
 
 	training_set_inputs = array([[0,0,1], [1,1,1], [0,1,1]])
 	training_set_outputs = array([[0,1,0]]).T
+	print(training_set_outputs[0][0])
 
-	neural_network.train(training_set_inputs, training_set_outputs, 999999)
+	neural_network.train(training_set_inputs, training_set_outputs, 10000)
 
 	print("new synaptic weights after training: ")
 	print(neural_network.synaptic_wiehgts)
 
 	print('Predicting: ')
 	print(neural_network.predict(array([1, 0, 0])))
-
-
-
-
 

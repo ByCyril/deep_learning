@@ -15,15 +15,13 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(x_train, y_train)
 
-yoe = 20
+yoe = 2
 prediction = regressor.predict(yoe)
 print("Years of Experience:" + str(yoe) + " Salary: " + str(prediction))
 
 
 plt.scatter(x_train, y_train)
 plt.plot(x_train, regressor.predict(x_train))
-
-
 
 plt.show()
 

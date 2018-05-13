@@ -1,20 +1,6 @@
 
 from numpy import *
 
-# training_inputs = array([[2,3],[1,1],[2,5],[12,3],[2,2]])
-# training_outputs = array([[10, 2, 14, 30, 8]]).T
-
-# training_inputs = array([[1,0,-7], [0,1,-4], [0,0,1]])
-
-# training_outputs = array([[8,4,3]]).T
-
-# training_inputs = array([[1,2,-1], [1,-1,2], [2,1,2]])
-
-# training_outputs = array([[6,9,18]]).T
-
-# training_inputs = array([[1,3],[-1,-4]])
-
-# training_outputs = array([[-7,0,1]]).T
 
 training_inputs = array([[1,2,3,4],[1,1,2,3],[1,1,2,1],[2,3,1,1]])
 training_outputs = array([[3,2,3,1]]).T
@@ -41,7 +27,6 @@ class NeuralNetwork():
 nets = NeuralNetwork()
 print(nets.weights)
 nets.train(training_inputs, training_outputs, 60000)
-
 
 print(nets.weights)
 

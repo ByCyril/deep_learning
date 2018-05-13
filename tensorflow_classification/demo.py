@@ -83,28 +83,7 @@ training_cost = sess.run(cost, feed_dict={x: inputx, y_: inputy})
 print "Training cost=", training_cost, "W=", sess.run(w), "b=", sess.run(b), '\n'
 
 
-
-
 sess.run(y, feed_dict={x:inputx})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

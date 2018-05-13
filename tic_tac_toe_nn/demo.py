@@ -16,11 +16,6 @@ training_outputs = array([[0,0,0,0,1,0,0,0,0],[0,1,0,0,0,0,0,0,0],[0,0,0,0,0,0,0
 
 weights = 2 * random.random((9,9)) - 1
 
-# inputSum = dot(training_inputs[1], weights)
-
-
-# print(weights)
-
 for h in xrange(4):
 	for j in xrange(9):
 		for i in xrange(10000):

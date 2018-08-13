@@ -12,6 +12,8 @@ dataframe = pd.read_fwf('brain_body.txt')
 x_values = dataframe[['Brain']]
 y_values = dataframe[['Body']]
 
+print(x_values)
+print(y_values)
 # Train model on data
 body_reg = linear_model.LinearRegression()
 body_reg.fit(x_values, y_values) # Get the line of best fit and plug the x and y variables

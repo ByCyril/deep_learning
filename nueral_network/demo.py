@@ -18,7 +18,7 @@ class NeuralNetwork():
 
 	def train(self, training_set_inputs, training_set_outputs, number_of_training_iterations):
 
-		for iteration in xrange(number_of_training_iterations):
+		for iteration in range(number_of_training_iterations):
 
 			output = self.predict(training_set_inputs)
 			error = training_set_outputs - output

@@ -12,6 +12,7 @@ class NeuralNetwork():
 	def __init__(self):
 		random.seed(1)
 		self.weights = 2 * random.random((4,1)) - 1
+		
 
 	def predict(self, inputs):
 		return dot(inputs, self.weights)

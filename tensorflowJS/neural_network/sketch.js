@@ -6,7 +6,7 @@ const model = tf.sequential();
 const hidden = tf.layers.dense({
   units: 4,
   inputShape: [3],
-  activation: "sigmoid"
+  activation: "tanh"
 });
 
 // add the hidden layer
@@ -22,7 +22,7 @@ const output = tf.layers.dense({
 model.add(output);
 
 // set the learning rate
-const sgdOpt = tf.train.sgd(0.5);
+const sgdOpt = tf.train.sgd(0.2);
 
 // compile with the learning rate and the type of error calculations
 model.compile({
@@ -31,13 +31,42 @@ model.compile({
 });
 
 // training inputs
-const xs = tf.tensor2d([[0, 0, 1], [1, 1, 1], [0, 1, 1]]);
+const xs = tf.tensor2d([
+	[0,1,0], 
+	[0,1,1], 
+	[1,1,0],
+	[-1,1,0],
+	[-1,0,0],
+	[-1,0,1],
+	[1,0,1],
+	[0,1,0],
+	[0,0,0],
+	[-1,0,0],
+	[0,0,1],
+	[1,1,1],
+	[1,0,0],
+	[-1,1,1]]);
 // training outputs
-const ys = tf.tensor2d([[0], [1], [0]]);
+const ys = tf.tensor2d([
+	[0],
+	[0],
+	[1],
+	[1],
+	[1],
+	[0],
+	[1],
+	[0],
+	[1],
+	[1],
+	[1],
+	[1],
+	[1],
+	[0]]);
 
 // make a prediction
 train().then(function() {
   console.log("training complete");
+  let testData = tf.tensor2d([-1,1,0])
   let y = model.predict(xs);
 
   y.print();

@@ -1,0 +1,2 @@
+
+Given a set of data, we want to find the best equation in order to make predictions. We tried 3 different graphing techniques.
